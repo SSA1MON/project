@@ -44,11 +44,11 @@ $(document).ready(function(){
 	function animationSymbols()	{
 
 		 if( window.innerWidth >= 1850 ){
-		    $(".about-symbols__div").css('margin-top', '70px');
-	        $(".about-symbols__div-two").css('margin-left', '750px');
-	        $(".about-symbols__bracket").css('margin-left', '100px');
-	        $(".about-symbols__sharp").css('margin-left', '250px');
-	        $(".about-symbols__slash").css('margin-left', '340px');
+		    $(".about-symbols__div").css('margin-top', '87px');
+	        $(".about-symbols__div-two").css('margin-left', '740px');
+	        $(".about-symbols__bracket").css('margin-left', '95px');
+	        $(".about-symbols__sharp").css('margin-left', '243px');
+	        $(".about-symbols__slash").css('margin-left', '371px');
 		 } else {
 		      return;
 		 }
@@ -92,14 +92,14 @@ $(document).ready(function(){
 		  	dotsEach: 1,
 		  	loop: true,
 			  responsive: {
-			    320: {
+			    300: {
 			      items: 1,
 			      dots: true
 			    },
-			    550: {
+			    650: {
 			    	items: 2
 			    },
-			    900: {
+			    1250: {
 			    	items: 3
 			    }
 			  }

@@ -4,182 +4,208 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Дмитрий Алексеев — Официальный сайт</title>
+	<link rel="preload" href="roboto-v20-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="roboto-v20-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="assets/style.css">
 	<link rel="stylesheet" href="plugins/owl.carousel/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="plugins/owl.carousel/dist/assets/owl.theme.default.min.css">
 	<script src="assets/jquery-3.5.0.min.js"></script>
-	<script src="assets/script.js"></script>
-	<script src="plugins/owl.carousel/dist/owl.carousel.min.js"></script>
-	<script src="https://kit.fontawesome.com/0f0cfb612d.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	
 	<header>
-		<div class="header">
-			<nav>
-				<div class="header__links">
-					<ul>
-						<li><a href="#">Услуги</a></li>
-						<li><a href="#">Портфолио</a></li>
-						<li><a href="#">Стоимость</a></li>
-					</ul>
+		<div class="container-fluid bg-gray">
+			<div class="container">
+				<div class="header">
+					<nav>
+						<div class="header__links">
+							<ul>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Портфолио</a></li>
+								<li><a href="#">Стоимость</a></li>
+							</ul>
+						</div>
+					</nav>
+					<div class="header__drop-menu">
+						<span></span>
+					</div>
+						<div class="drop-menu__mob-menu">
+							<div class="header__links mob-menu">
+								<button class="form__close">&#215;</button>
+								<h2>Меню</h2>
+								<ul>
+									<li><a href="#">Услуги</a></li>
+									<li><a href="#">Портфолио</a></li>
+									<li><a href="#">Стоимость</a></li>
+								</ul>
+							</div>
+						</div>
+					<div class="header__tel">
+						<a href="tel:+74999955577">+7 (499) 995-55-77</a>
+					</div>
+					<div class="header__tel-mob">
+						<img src="img/tel.png" alt="Call">
+					</div>
+					<input type="submit" value="Заказать звонок">
+					<div class="header__call">
+						<form class="call__form">
+							<button class="form__close">&#215;</button>
+							<h2>Заказать звонок</h2>
+							<p>* Введите Ваше имя:</p>
+							<input type="text" placeholder="Иван" required>
+							<p>* Введите Ваш номер телефона:</p>
+							<input type="text" placeholder="+7 999 999 99 99" required>
+							<button type="submit">Отправить</button>
+						</form>
+					</div>
 				</div>
-			</nav>
-			<div class="header__drop-menu">
-				<span></span>
 			</div>
-				<div class="drop-menu__mob-menu">
-					<div class="header__links mob-menu">
-						<button class="form__close">&#215;</button>
-						<h2>Меню</h2>
+		</div>
+	</header>
+	<main>
+		<article>
+			<div class="container-fluid bg-gray bg-svg">
+				<div class="about-symbols">
+					<div class="about-symbols__div"> &lt;div&gt;</div>
+					<div class="about-symbols__div-two"> &lt;div&gt; </div>
+					<div class="about-symbols__bracket"> {&nbsp;} </div>
+					<div class="about-symbols__sharp"> # </div>
+					<div class="about-symbols__slash"> &lt;/&gt; </div>
+				</div>
+				<div class="container">
+					<div class="about-info">
+						<img src="img/human.png" alt="Human">
+						<h1>Дмитрий Алексеев</h1>
+						<p>Frontend-разработчик и веб-верстальщик </p>
+						<button>Узнать больше</button>
+							<div class="about__learn-more">
+								<form class="learn-more__form">
+									<button class="form__close">&#215;</button>
+									<h2>Узнать больше</h2>
+									<p>* Введите Ваше имя:</p>
+									<input type="text" placeholder="Иван" required>
+									<p>* Введите Ваш e-mail:</p>
+									<input type="email" placeholder="dmitry@alekseev.com" required>
+									<button type="submit">Отправить</button>
+								</form>
+							</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article>
+			<div class="container-fluid">
+				<div class="container">
+					<div class="block-developer">
+						<h2>Что я делаю</h2>
+						<div class="block-developer__works">
+							<div class="works__layout">
+								<img src="img/tools-and-utensils.png" alt="Верстка">
+								<p>Вёрстка лендинг&mdash;страниц и&nbsp;сайтов любой сложности</p>
+							</div>
+							<div class="works__adaptive">
+								<img src="img/responsive.png" alt="Верстка">
+								<p>Адаптивная вёрстка под все браузеры и&nbsp;устройства</p>
+							</div>
+							<div class="works__frontend">
+								<img src="img/programming.png" alt="Верстка">
+								<p>Frontend&mdash;разработка и&nbsp;программирование</p>
+							</div>
+							<div class="works__fixes">
+								<img src="img/coding.png" alt="Верстка">
+								<p>Исправление и&nbsp;доработка существующей вёрстки</p>
+							</div>
+						</div>
+						<button>Узнать стоимость</button>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article>
+			<div class="container-fluid bg-gray">
+				<div class="container">
+					<div class="dev-examples">
+						<h2>Примеры моих работ</h2>
+						<div class="carousel">
+								<img class="left-arrow js-prev" src="img/arrow.png" alt="Arrow">
+								<img class="right-arrow js-next" src="img/arrow.png" alt="Arrow">
+							<div class="owl-carousel owl-theme">
+							    <div class="item item1">
+							    	<img src="img/work1.jpg" alt="Psychology">
+									<h3>Сайт психолога Веры Антоновой</h3>
+							    </div>
+							    <div class="item item2">
+							    	<img src="img/work2.jpg" alt="Kids">
+									<h3>Сайт магазина детской одежды</h3>
+							    </div>
+							    <div class="item item1">
+							    	<img src="img/work3.jpg" alt="Fishing">
+									<h3>Сайт магазина «Рыболов»</h3>
+							    </div>
+							</div>
+						</div>
+
+						<button>Заказать проект</button>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article>
+			<div class="container-fluid adaptive">
+				<div class="adaptive-symbols">
+					<div class="adaptive-symbols__bracket"> {&nbsp;} </div>
+					<div class="adaptive-symbols__slash"> &lt;/&gt; </div>
+					<div class="adaptive-symbols__sharp"> # </div>
+					<div class="adaptive-symbols__div"> &lt;div&gt; </div>
+					<div class="adaptive-symbols__bracket-two"> {&nbsp;} </div>
+				</div>
+				<div class="container">
+					<div class="adaptive-info">
+						Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*
+						<p>* Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитывается индивидуально, в&nbsp;зависимости от&nbsp;сложности задач</p>
+					</div>
+				</div>
+			</div>
+		</article>
+	</main>
+	<footer>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="footer">
+					<div class="footer-links">
 						<ul>
 							<li><a href="#">Услуги</a></li>
 							<li><a href="#">Портфолио</a></li>
 							<li><a href="#">Стоимость</a></li>
 						</ul>
 					</div>
-				</div>
-			<div class="header__tel">
-				<a href="tel:+74999955577">+7 (499) 995-55-77</a>
-			</div>
-			<div class="header__tel-mob">
-				<img src="img/tel.png" alt="Call">
-			</div>
-			<input type="submit" value="Заказать звонок">
-			<div class="header__call">
-				<form class="call__form">
-					<button class="form__close">&#215;</button>
-					<h2>Заказать звонок</h2>
-					<p>* Введите Ваше имя:</p>
-					<input type="text" placeholder="Иван" required>
-					<p>* Введите Ваш номер телефона:</p>
-					<input type="text" placeholder="+7 999 999 99 99" required>
-					<button type="submit">Отправить</button>
-				</form>
-			</div>
-		</div>
-	</header>
-	<article>
-		<div class="about-symbols">
-			<div class="about-symbols__div"> &lt;div&gt;</div>
-			<div class="about-symbols__div-two"> &lt;div&gt; </div>
-			<div class="about-symbols__bracket"> {&nbsp;} </div>
-			<div class="about-symbols__sharp"> # </div>
-			<div class="about-symbols__slash"> &lt;/&gt; </div>
-		</div>
-		<div class="about-info">
-			<img src="img/human.png" alt="Human">
-			<h1>Дмитрий Алексеев</h1>
-			<p>Frontend-разработчик и веб-верстальщик </p>
-			<button>Узнать больше</button>
-				<div class="about__learn-more">
-					<form class="learn-more__form">
-						<button class="form__close">&#215;</button>
-						<h2>Узнать больше</h2>
-						<p>* Введите Ваше имя:</p>
-						<input type="text" placeholder="Иван" required>
-						<p>* Введите Ваш e-mail:</p>
-						<input type="email" placeholder="dmitry@alekseev.com" required>
-						<button type="submit">Отправить</button>
-					</form>
-				</div>
-		</div>
-		<div class="container-workspace">
-			<div class="block-developer">
-				<h2>Что я делаю</h2>
-				<div class="block-developer__works">
-					<div class="works__layout">
-						<img src="img/tools-and-utensils.png" alt="Верстка">
-						<p>Вёрстка лендинг&mdash;страниц и&nbsp;сайтов любой сложности</p>
-					</div>
-					<div class="works__adaptive">
-						<img src="img/responsive.png" alt="Верстка">
-						<p>Адаптивная вёрстка под все браузеры и&nbsp;устройства</p>
-					</div>
-					<div class="works__frontend">
-						<img src="img/programming.png" alt="Верстка">
-						<p>Frontend&mdash;разработка и&nbsp;программирование</p>
-					</div>
-					<div class="works__fixes">
-						<img src="img/coding.png" alt="Верстка">
-						<p>Исправление и&nbsp;доработка существующей вёрстки</p>
-					</div>
-				</div>
-				<button>Узнать стоимость</button>
-			</div>
-		</div>
-		<div class="container-fluid bg-gray">
-			<div class="container-workspace">
-				<div class="dev-examples">
-					<h2>Примеры моих работ</h2>
-					<div class="carousel">
-							<img class="left-arrow js-prev" src="img/arrow.png" alt="Arrow">
-							<img class="right-arrow js-next" src="img/arrow.png" alt="Arrow">
-						<div class="owl-carousel owl-theme">
-						    <div class="item">
-						    	<img src="img/work1.jpg" alt="Psychology">
-								<h3>Сайт психолога Веры Антоновой</h3>
-						    </div>
-						    <div class="item">
-						    	<img src="img/work2.jpg" alt="Kids">
-								<h3>Сайт магазина детской одежды</h3>
-						    </div>
-						    <div class="item">
-						    	<img src="img/work3.jpg" alt="Fishing">
-								<h3>Сайт магазина «Рыболов»</h3>
-						    </div>
+					<div class="footer-contacts">
+						<div class="footer-contacts__tel">
+							<i class="fas fa-phone-alt"></i> <a href="tel:+74999957755">+7 (499) 995-77-55</a>
+						</div>
+						<div class="footer-contacts__mail">
+							<i class="fas fa-envelope"></i> <a href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a>
 						</div>
 					</div>
-
-					<button>Заказать проект</button>
-				</div>
-			</div>
-		</div>
-		<div class="adaptive">
-			<div class="adaptive-symbols">
-				<div class="adaptive-symbols__bracket"> {&nbsp;} </div>
-				<div class="adaptive-symbols__slash"> &lt;/&gt; </div>
-				<div class="adaptive-symbols__sharp"> # </div>
-				<div class="adaptive-symbols__div"> &lt;div&gt; </div>
-				<div class="adaptive-symbols__bracket-two"> {&nbsp;} </div>
-			</div>
-			<div class="adaptive-info">
-				Адаптивная верстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*
-				<p>* Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитывается индивидуально, в&nbsp;зависимости от&nbsp;сложности задач</p>
-			</div>
-		</div>
-	</article>
-	<footer>
-		<div class="container-workspace">
-			<div class="footer">
-				<div class="footer-links">
-					<ul>
-						<li><a href="#">Услуги</a></li>
-						<li><a href="#">Портфолио</a></li>
-						<li><a href="#">Стоимость</a></li>
-					</ul>
-				</div>
-				<div class="footer-contacts">
-					<div class="footer-contacts__tel">
-						<i class="fas fa-phone-alt"></i> <a href="tel:+74999957755">+7 (499) 995-77-55</a>
-					</div>
-					<div class="footer-contacts__mail">
-						<i class="fas fa-envelope"></i> <a href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a>
-					</div>
-				</div>
-				<div class="footer-connect">
-					<input type="submit" value="Заказать звонок">
-					<div class="footer-connect__social-icons">
-						<div class="social-icons__vk"></div>
-						<div class="social-icons__fb"></div>
-						<div class="social-icons__twtr"></div>
-						<div class="social-icons__inst"></div>
+					<div class="footer-connect">
+						<input type="submit" value="Заказать звонок">
+						<div class="footer-connect__social-icons">
+							<div class="social-icons__vk"><a href="#"></a></div>
+							<div class="social-icons__fb"><a href="#"></a></div>
+							<div class="social-icons__twtr"><a href="#"></a></div>
+							<div class="social-icons__inst"><a href="#"></a></div>
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="copyright">&copy; Дмитрий Алексеев, 2016 - 2018</div>
 		</div>
-		<div class="copyright">&copy; Дмитрий Алексеев, 2016 - 2018</div>
 	</footer>
+
+<script src="assets/script.js"></script>
+<script src="plugins/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="https://kit.fontawesome.com/0f0cfb612d.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
