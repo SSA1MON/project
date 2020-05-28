@@ -4,24 +4,29 @@ $(document).ready(function(){
 
 		// Вызов формы заказа звонка
 		$('.header :input').click(function() {
-			$('.header__call').show();
+			$('.header__call').fadeIn(200);
+			$('body').css('overflow', 'hidden');
 		});
 		$('.header__tel-mob').click(function() {
-			$('.header__call').show();
+			$('.header__call').fadeIn(200);
+			$('body').css('overflow', 'hidden');
 		});
 			// Закрытие формы заказа с помощью кнопки 
 			$('.form__close').click(function() {
-				$('.header__call').hide();
+				$('.header__call').fadeOut(200);
+				$('body').css('overflow', 'visible');
 			});
 
 		// Вызов формы заказа в футере
 		$('.footer-connect :input').click(function() {
-			$('.header__call').show();
+			$('.header__call').fadeIn(200);
+			$('body').css('overflow', 'hidden');
 		});
 
 		$('.header__call').click(function(event) {
 			if (event.target == this) {
-				$(this).hide();
+				$(this).fadeOut(200);
+				$('body').css('overflow', 'visible');
 			}
 		});
 
@@ -32,10 +37,13 @@ $(document).ready(function(){
 	function dropdownMenu() {
 		$('.header__drop-menu').click(function() {
 			$('.drop-menu__mob-menu').show();
+			$('body').css('overflow', 'hidden');
 		});
 
 		$('.drop-menu__mob-menu :button').click(function() {
 			$('.drop-menu__mob-menu').hide();
+			$('.header__call').hide();
+			$('body').css('overflow', 'visible');
 		});
 	};
 
@@ -60,22 +68,27 @@ $(document).ready(function(){
 
     	// Вызов формы
 		$('.about-info :button').click(function() {
-			$('.about__learn-more').show();
+			$('.about__learn-more').fadeIn(200);
+			$('body').css('overflow', 'hidden');
 		});
 		$('.block-developer :button').click(function() {
-			$('.about__learn-more').show();
+			$('.about__learn-more').fadeIn(200);
+			$('body').css('overflow', 'hidden');
 		});
 		$('.dev-examples :button').click(function() {
-			$('.about__learn-more').show();
+			$('.about__learn-more').fadeIn(200);
+			$('body').css('overflow', 'hidden');
 		});
 			// Закрытие формы
 			$('.form__close').click(function() {
-				$('.about__learn-more').hide();
+				$('.about__learn-more').fadeOut(200);
+				$('body').css('overflow', 'visible');
 			});
 
 		$('.about__learn-more').click(function(event) {
 			if (event.target == this) {
-				$(this).hide();
+				$(this).fadeOut(200);
+				$('body').css('overflow', 'visible');
 			}
 		});
 
@@ -118,7 +131,7 @@ $(document).ready(function(){
 		  });
 		});
 
-    }
+    };
     	carouselSlider();
 
 });
