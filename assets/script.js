@@ -104,6 +104,7 @@ $(document).ready(function(){
 		  var owl = $(this).find('.owl-carousel').owlCarousel({
 		  	dotsEach: 1,
 		  	loop: true,
+		  	margin: 40,
 			  responsive: {
 			    300: {
 			      items: 1,

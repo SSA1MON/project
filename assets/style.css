@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Roboto'; 
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -413,7 +413,7 @@ button {
 	    height: 60px;
 	    position: absolute;
 	    margin-top: 120px;
-    	margin-left: -10px;
+    	margin-left: -20px;
 	    cursor: pointer;
 	    z-index: 2
 	}
@@ -429,10 +429,10 @@ button {
 	    cursor: pointer;
 	    z-index: 2
 	}
-.item {
+/*.item {
 	padding-left: 20px;
 	padding-right: 8px;
-}
+}*/
 .owl-dots {
     display: block !important;
 }
@@ -668,7 +668,7 @@ button {
 		width: auto;
 	}
 	.header {
-		padding-left: 15%;
+		padding: 29px 4% 0 6%;
 	}
 	.header__tel {
 		margin-left: auto;
@@ -679,11 +679,21 @@ button {
 	.about-info img {
 		margin-right: 5%;
 	}
+	.block-developer {
+		margin: 0 150px;
+	}
+	.carousel {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
 	.container-workspace {
 		margin-left: 10%;
 	}
 	.adaptive-info {
 		margin: 0 auto;
+	}
+	.footer {
+		margin: 0 100px;
 	}
 }
 @media screen and (max-width: 1350px) {
@@ -692,11 +702,20 @@ button {
 		font-size: 54px;
 	}
 
-	.header {
-		padding: 29px 0 29px 5%;
-	}
+
 	.header__tel {
-		margin-left: 20%;
+		margin-left: auto;
+	}
+	.block-developer__works {
+		margin-top: 87px;
+		flex-wrap: wrap;
+		justify-content: space-between;
+    	padding: 0px 150px;
+	}
+	.works__layout, .works__adaptive, .works__frontend, .works__fixes {
+		margin-right: 0;
+		margin-bottom: 77px;
+		width: 260px;
 	}
 
 	.left-arrow, .right-arrow, .carousel__work-three {
@@ -707,17 +726,10 @@ button {
 	.about-info img {
 		margin-right: 5%;
 	}
-	.block-developer__works {
-		margin-top: 87px;
-		margin-left: 185px;
-		flex-wrap: wrap;
+	.block-developer {
+	    margin: 0 100px;
 	}
-	.works__layout, .works__adaptive, .works__frontend, .works__fixes {
-		margin-right: 127px;
-		margin-bottom: 77px;
-		width: 260px;
-	}
-	.item1 {
+	/*.item1 {
 		padding-left: 48px !important;
     	padding-right: 40px !important;
 	}
@@ -731,7 +743,7 @@ button {
 	.item {
 		padding-left: 48px;
 		padding-right: 40px;
-	}
+	}*/
 		.item h3 {
 			margin-top: 22px;
 			font-size: 26px;
@@ -745,9 +757,7 @@ button {
 		}
 }
 @media screen and (max-width: 1080px) {
-	.about-info {
-		background-position: 220% top;
-	}
+
 	.about-info h1 {
 		margin-left: 0;
 	}
@@ -756,6 +766,9 @@ button {
 	}
 	.about-info h1, .about-info p, .about-info button {
 		margin-left: 20px;
+	}
+	.block-developer {
+	    margin: 0;
 	}
 }
 @media screen and (max-width: 1036px) {
@@ -777,7 +790,7 @@ button {
 		width: auto;
 	}
 	.bg-svg {
-		background-position: 205% 411%;
+		background-position: 206% 261%;
 		background-size: auto;
 	}
 
@@ -785,7 +798,7 @@ button {
 		display: block;
 	}
 	.about-symbols__div {
-		margin-top: 44px;
+		margin-top: 75px;
     	margin-left: 886px;
 	}
 	.about-symbols__div-two {
@@ -806,14 +819,11 @@ button {
     	margin-top: -127px;
 	}
 	
-	.header {
-		padding: 29px 0 29px 59px;
-	}
+
 	.header ul {
 		display: none;
 	}
 	.header__tel {
-		margin-left: 46%;
 		padding-top: 7px;
 	}
 	.header__drop-menu {
@@ -834,9 +844,9 @@ button {
 			margin-bottom: 10px;
 			padding: 0;
 		}
+	
 	.about-info {
-		background-position: 460px 90px;
-   		background-size: 800px;
+		padding-top: 58px;
 	}
 		.about-info h1 {
 			margin-left: 39px;
@@ -867,7 +877,7 @@ button {
 		margin-right: 27px;
 	}
 	.block-developer button {
-		margin-top: 14px;
+		margin-top: 21px;
 		padding: 23px 84px;
 	}
 	
@@ -882,18 +892,22 @@ button {
 		display: none;
 	}
 	.dev-examples button {
-		margin-top: 89px;
-    	padding: 23px 90px;
+		margin-top: 92px;
+	    padding: 22px 85px;
+	    font-size: 19px;
 	}
 
 	.adaptive {
-		margin-top: 0;
+		margin-top: 4px;
 	}
 	.adaptive-info {
 		margin: 0 40px;
     	font-size: 45px;
-    	padding: 71px 0;
+    	padding: 74px 0 69px;
 	}
+		.adaptive-info p {
+			line-height: 1.4;
+		}
 	.adaptive-symbols {
 		display: block;
 	}
@@ -916,6 +930,7 @@ button {
 		}
 	.footer {
 		padding: 102px 17px 74px 40px;
+		margin: auto;
 	}
 	.footer-contacts {
 		margin-left: 0;
@@ -931,13 +946,6 @@ button {
 		}
 	}
 @media screen and (max-width: 970px) {
-	.header__tel {
-	    margin-left: 35%;
-	}
-	.works__layout, .works__adaptive, 
-	.works__frontend, .works__fixes {
-		margin-right: 1%;
-	}
 	.adaptive-symbols {
 		display: none;
 	}
@@ -948,8 +956,7 @@ button {
 	}
 	.block-developer__works {
 		margin-left: 0;
-		flex-wrap: wrap;
-		padding-left: 20%;
+		padding: 0 100px;
 	}
 	.works__fixes {
 		left: 440px;
@@ -960,18 +967,12 @@ button {
 		background-position: 100% 411%;
 	}
 
-	.header__tel {
-		margin-left: 33%;
-	}
 	.about-info button {
 		margin: 46px 0 0 20px;
 	}
 }
 
 @media screen and (max-width: 785px) {
-	.header__tel {
-	    margin-left: 30%;
-	}
 
 	.about-info  {
 		background-position: 260px 90px;
@@ -1004,9 +1005,6 @@ button {
 		margin-left: 15%;
 	}
 
-	.header__tel {
-		margin-left: 10%;
-	}
 	.call__form {
 		left: auto;
 		top: auto;
@@ -1054,8 +1052,7 @@ button {
 	}
 	.footer-contacts {
 		font-size: 20px;
-		margin-top: 45px;
-		margin-left: 20px;
+		margin: 45px 0 20px;
 	}
 	.footer-contacts__mail i, .footer-contacts__tel i {
 	    font-size: 15px;
@@ -1074,6 +1071,16 @@ button {
 	}
 }
 
+@media screen and (max-width: 719px) {
+	.block-developer__works {
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 650px) {
+	.header {
+	    padding: 29px 5% 0 10%;
+	}
+}
 @media screen and (max-width: 600px) {
 	h1 {
 		font-size: 50px;
@@ -1214,9 +1221,6 @@ button {
 		    height: 50px;
 		}
 
-	.about-symbols {
-		display: block;
-	}
 	.about-symbols__div {
 		display: none;
 	}
@@ -1325,13 +1329,12 @@ button {
 		    font-size: 21px;
 		}
 	.carousel {
-		margin-left: 0px;
 		margin-top: 72px;
 	}
 		.carousel button {
 			min-width: auto;
 		}
-	.item {
+	/*.item {
 		padding-left: 25px !important;
 		padding-right: 23px !important;
 	}
@@ -1343,7 +1346,7 @@ button {
 	.item1 img, .item2 img {
 	    width: 100% !important;
 	    height: 300px;
-	}
+	}*/
 	.owl-dots button {
 			margin-top: 47px;
 		}
@@ -1387,7 +1390,7 @@ button {
 		padding: 9px 0;
 	}
 	.footer-contacts {
-		font-size: 26px;
+		font-size: 24px;
 	    margin-top: 45px;
 	    margin-left: 0;
 	}
@@ -1448,6 +1451,9 @@ button {
 		font-size: 18px;
 		margin-left: 37px;
 	}
+	.about-symbols__div-two {
+	    margin-left: 150%;
+	}
 	.about-info button, .footer-connect input {
 		width: 280px;
     	padding: 14px 0 42px 0;
@@ -1483,10 +1489,13 @@ button {
 			width: 26px;
 		}
 
+	.about-symbols {
+		display: block;
+	}
 	.about-symbols__div-two {
 		font-size: 16px;
 	    margin-left: 125%;
-	    margin-top: 339px;
+	    margin-top: 341px;
 	}
 	.about-symbols__bracket {
 	    font-size: 25px;
@@ -1505,12 +1514,12 @@ button {
 	}
 
 	.about-info {
-		margin-top: -282px;
+		margin-top: -284px;
 	}
 		.about-info img {
 		    width: 229px;
 		    margin-right: 17px;
-		    padding-top: 298px;
+		    padding-top: 302px;
 		}
 		.about-info h1 {
 			margin-top: 0;
@@ -1524,7 +1533,7 @@ button {
 			padding: 23px 0;
 			font-size: 16px;
 			margin-top: 23px;
-			margin-left: 21px;
+			margin-left: 23px;
 		}
 
 	.block-developer {
@@ -1540,10 +1549,11 @@ button {
 		    padding: 23px 0 23px;
 		    font-size: 16px;
 		    margin-top: 1px;
+		    margin-left: 10px;
 		}
 	.block-developer__works {
 	    margin-top: 42px;
-	    padding-left: 9%;
+	    padding: 0;
 	}
 		.block-developer__works img {
 			margin-bottom: 12px;
@@ -1574,6 +1584,8 @@ button {
 		}
 	.carousel {
 		margin-top: 44px;
+		margin-left: 25px;
+    	margin-right: 15px;
 	}
 		.item1 img, .item2 img {
 			height: 251px;
@@ -1621,7 +1633,7 @@ button {
 		}
 	.footer-connect input {
 	    padding: 17px 0 19px 0;
-	    margin-top: 25px;
+	    margin-top: 6px;
 	    font-size: 16px;
 	}
 	.footer-connect__social-icons {
