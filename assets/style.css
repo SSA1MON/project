@@ -114,7 +114,7 @@ button {
 				transition: 0.4s;
 			}
 .header__drop-menu {
-	margin-left: -19px;
+	/*margin-left: -19px;*/
 	cursor: pointer;
 	display: none;
 }
@@ -668,8 +668,11 @@ button {
 		width: auto;
 	}
 	.header {
-		padding: 29px 4% 0 6%;
+		padding: 29px 84px 0;
 	}
+		.header ul {
+			margin-left: 0;
+		}
 	.header__tel {
 		margin-left: auto;
 	}
@@ -981,7 +984,7 @@ button {
     	font-size: 18px;
 	}
 	.about-info button {
-		margin-left: 20px;
+		margin-left: 40px;
 		padding: 20px 50px;
 	}
 	.about-info img {
@@ -997,6 +1000,9 @@ button {
 @media screen and (max-width: 755px) {
 	.about-info h1 {
 	    font-size: 50px;
+	    text-align: center;
+    	margin: auto;
+    	margin-left: 10px;
 	}
 }
 @media screen and (max-width: 740px) {
@@ -1017,13 +1023,28 @@ button {
 		.about-info img {
 			margin-right: 80px;
 		}
+		.about-info__name {
+			display: flex;
+		    width: 100%;
+		    padding-top: 20px;
+		}
+			.about-info h1 {
+				padding: 0;
+				margin-left: auto;
+			}
 		.about-info p {
 			font-size: 25px;
-			margin-left: 15%;
+			margin: 20px auto 0;
+		    display: flex;
+		    justify-content: center;
 		}
-		.about-info button {
-			padding: auto;
-			margin-left: 30%;
+		.about-info__btn {
+		    display: flex;
+		    justify-content: center;
+		}
+		.about-info__btn button {
+			margin-left: 0;
+    		width: 330px;
 		}
 	.learn-more__form {
 		left: auto;
@@ -1072,15 +1093,14 @@ button {
 }
 
 @media screen and (max-width: 719px) {
+	.header {
+	    padding: 29px 30px 0;
+	}
 	.block-developer__works {
 		justify-content: center;
 	}
 }
-@media screen and (max-width: 650px) {
-	.header {
-	    padding: 29px 5% 0 10%;
-	}
-}
+
 @media screen and (max-width: 600px) {
 	h1 {
 		font-size: 50px;
@@ -1099,18 +1119,15 @@ button {
 		.about-info p {
 			font-size: 23px;
 		}
-		.about-info button {
-			margin-left: 120px;
-		}
 	.header input {
 		display: none;
 	}
 	.header__tel-mob {
 		display: block;
-		margin: auto;
+		/*margin: auto;*/
 	}
 		.header__tel-mob img {
-			width: 50px;
+			width: 45px;
 		}
 	.block-developer {
 		margin-top: 200px;
@@ -1124,7 +1141,6 @@ button {
 	}
 	
 }
-
 @media screen and (max-width: 500px) {
 
 	h1 {
@@ -1152,15 +1168,9 @@ button {
 		background-size: 122%;
 	}
 	
-	.header {
-		padding-left: 25%;
-	}
 		.header input {
 			display: none;
 		}
-	.header__drop-menu {
-		margin-left: -78px;
-	}
 		.header__drop-menu span {
 			margin-top: 20px;
 			width: 31px;
@@ -1181,11 +1191,10 @@ button {
 	}
 
 	.header__tel {
-		margin-left: 50px;
+		margin-left: auto;
 		font-size: 23px;
 	}
 	.header__tel-mob {
-		margin-left: auto;
 		margin-top: 5px;
 	}
 		.header__tel-mob img {
@@ -1259,7 +1268,7 @@ button {
 		.about-info h1 {
 			margin-left: auto;
 			margin-top: 3px;
-		    font-size: 39px;
+		    font-size: 34px;
 		    text-align: center;
 		}
 		.about-info p {
@@ -1270,8 +1279,8 @@ button {
 		    line-height: 1.5;
 		}
 		.about-info button {
-			margin: 30px 0 0 26px;
-		    width: 364px;
+			margin: 30px 0 0 0;
+		    width: 300px;
 		    padding: 30px 0 42px 0;
 		    font-size: 21px;
 		}
@@ -1299,7 +1308,6 @@ button {
 	.block-developer__works {
 		flex-wrap: wrap;
 		margin-top: 56px;
-    	padding-left: 19%;
 	}
 		.block-developer__works p {
 			font-size: 20px;
@@ -1449,23 +1457,33 @@ button {
 @media screen and (max-width: 392px) {
 	.header__tel {
 		font-size: 18px;
-		margin-left: 37px;
+		padding-top: 11px;
 	}
 	.about-symbols__div-two {
 	    margin-left: 150%;
 	}
-	.about-info button, .footer-connect input {
+	.about-info h1 {
+		font-size: 32px;
+	}
+	.about-info__btn button {
+		padding: 22px 0 25px 0;
+		font-size: 18px;
+	}
+	.footer-connect input {
 		width: 280px;
-    	padding: 14px 0 42px 0;
+    	padding: 25px 0 25px 0;
+	}
+	.block-developer button {
+	    padding: 31px 65px 42px;
+	}
+	.dev-examples button {
+	    padding: 30px 65px 42px;
 	}
 }
 
 @media screen and (max-width: 320px) {
 	.header {
-		padding: 21px 0 29px;
-	}
-	.header__drop-menu {
-		margin-left: 20px;
+		padding: 21px 20px 29px;
 	}
 		.header__drop-menu span {
 			margin-top: 17px;
@@ -1482,6 +1500,10 @@ button {
 			width: 24px;
 			height: 3px;
 		}
+
+	.header__tel {
+	    padding-top: 7px;
+	}
 	.header__tel-mob {
 		margin-left: 6px;
 	}
@@ -1533,7 +1555,6 @@ button {
 			padding: 23px 0;
 			font-size: 16px;
 			margin-top: 23px;
-			margin-left: 23px;
 		}
 
 	.block-developer {
@@ -1584,7 +1605,7 @@ button {
 		}
 	.carousel {
 		margin-top: 44px;
-		margin-left: 25px;
+		margin-left: 18px;
     	margin-right: 15px;
 	}
 		.item1 img, .item2 img {
