@@ -1,16 +1,22 @@
 <!DOCTYPE html> 
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" name="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Дмитрий Алексеев — Официальный сайт</title>
 	<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="icon" href="img/favicon.ico">
-	<link rel="stylesheet" href="assets/style.css">
+	<link rel="apple-touch-icon" href="/apple-icon.jpg">
+	<link rel="stylesheet" href="assets/style.min.css">
 	<link rel="stylesheet" href="plugins/owl.carousel/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="plugins/owl.carousel/dist/assets/owl.theme.default.min.css">
 	<script src="assets/jquery-3.5.0.min.js"></script>
+	<script src="assets/jquery.inputmask.min.js" defer async></script>
+	<script src="assets/jquery.validate.min.js"></script>
+	<script src="assets/script.min.js" defer async></script>
+	<script src="plugins/owl.carousel/dist/owl.carousel.min.js" defer async></script>
+	<script src="https://kit.fontawesome.com/0f0cfb612d.js" crossorigin="anonymous" defer async></script>
 </head>
 <body>
 	
@@ -49,15 +55,19 @@
 					</div>
 					<input type="submit" value="Заказать звонок">
 					<div class="header__call">
-						<form class="call__form">
+						<form class="call__form" method="POST">
+							<input type="hidden" name="project_name" value="p_name">
+							<input type="hidden" name="admin_email" value="contact@saimon.space">
+							<input type="hidden" name="form_subject" value="topic">
 							<button class="form__close">&#215;</button>
 							<div class="container-menu">
 								<h2>Заказать звонок</h2>
 								<p>* Введите Ваше имя:</p>
-								<input type="text" placeholder="Иван" required>
+								<input type="text" name="Имя" placeholder="Иван" required maxlength="10">
 								<p>* Введите Ваш номер телефона:</p>
-								<input type="text" placeholder="+7 999 999 99 99" required>
-								<button type="submit">Отправить</button>
+								<input type="tel" name="Телефон" placeholder="+7 (___) ___-__-__" required>
+								<button class="form__btn" type="submit">Отправить</button>
+								<div class="form__status">Отправлено!</div>
 							</div>
 						</form>
 					</div>
@@ -82,15 +92,19 @@
 						<p>Frontend-разработчик и веб-верстальщик</p>
 						<div class="about-info__btn"><button>Узнать больше</button></div>
 							<div class="about__learn-more">
-								<form class="learn-more__form">
+								<form class="learn-more__form" method="POST">
+									<input type="hidden" name="project_name" value="p_name">
+									<input type="hidden" name="admin_email" value="contact@saimon.space">
+									<input type="hidden" name="form_subject" value="topic">
 									<button class="form__close">&#215;</button>
 									<div class="container-menu">
 										<h2>Узнать больше</h2>
 										<p>* Введите Ваше имя:</p>
-										<input type="text" placeholder="Иван" required>
+										<input type="text" name="Имя" placeholder="Иван" required>
 										<p>* Введите Ваш e-mail:</p>
-										<input type="email" placeholder="dmitry@alekseev.com" required>
-										<button class="form-btn" type="submit">Отправить</button>
+										<input type="email" name="Почта" placeholder="dmitry@alekseev.com" required>
+										<button class="form-btn form__btn" type="submit">Отправить</button>
+										<div class="form__status">Отправлено!</div>
 									</div>
 								</form>
 							</div>
@@ -195,10 +209,10 @@
 					<div class="footer-connect">
 						<input type="submit" value="Заказать звонок">
 						<div class="footer-connect__social-icons">
-							<div class="social-icons__vk" aria-label="vk"><a href="#"></a></div>
-							<div class="social-icons__fb" aria-label="facebook"><a href="#"></a></div>
-							<div class="social-icons__twtr" aria-label="twitter"><a href="#"></a></div>
-							<div class="social-icons__inst" aria-label="instagram"><a href="#"></a></div>
+							<div class="social-icons__vk" aria-label="vk"><a href="https://vk.com" target="_blank"></a></div>
+							<div class="social-icons__fb" aria-label="facebook"><a href="https://fb.com" target="_blank"></a></div>
+							<div class="social-icons__twtr" aria-label="twitter"><a href="https://twitter.com" target="_blank"></a></div>
+							<div class="social-icons__inst" aria-label="instagram"><a href="https://instagram.com" target="_blank"></a></div>
 						</div>
 					</div>
 				</div>
@@ -206,10 +220,6 @@
 			<div class="copyright">&copy; Дмитрий Алексеев, 2016 - 2018</div>
 		</div>
 	</footer>
-
-<script src="assets/script.js"></script>
-<script src="plugins/owl.carousel/dist/owl.carousel.min.js"></script>
-<script src="https://kit.fontawesome.com/0f0cfb612d.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

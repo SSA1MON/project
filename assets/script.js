@@ -135,4 +135,42 @@ $(document).ready(function(){
     };
     	carouselSlider();
 
+    $('input[type="tel"]').inputmask({ "mask": "+7 (999) 999-99-99" });
+
+    $('form').each(function() {
+    	$(this).validate({
+    		errorPlacement(error,element) {
+    			return true;
+    		},
+    		focusInvalid: false,
+    		rules: {
+    			Телефон: {
+    				required: true,
+    			},
+    			Имя: {
+    				required: true,
+    				maxlength: 10,
+    			},
+    			Почта: {
+    				required: true,
+    			}
+    		},
+    		submitHandler(form) {
+    			let th = $(form);
+
+    		$.ajax({
+    			type: 'POST',
+    			url: 'mail.php',
+    			data: th.serialize(),
+    		}).done(() => {
+    			console.log('Отправлено');
+    			$('.form__status').css('display', 'block');
+    			th.trigger('reset');
+    		});
+
+    		return false;
+    		}
+    	});
+    });
+
 });

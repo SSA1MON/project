@@ -186,6 +186,9 @@ button {
 		.header input:not(:hover) {
 			transition: 0.7s;
 		}
+	.call__form input[type="text"], .call__form input[type="tel"] {
+	    color: #000;
+	}
 .header__call, .about__learn-more {
 	background-color: rgba(0, 0, 0, 0.65);
     position: fixed;
@@ -229,11 +232,9 @@ button {
 	.call__form input, .about__learn-more input {
 		padding: 12px 10px;
     	width: 250px;
-    	color: #758090;
 	}
 		.call__form input:hover, .about__learn-more input:hover {
 			background-color: #fff;
-			color: #758090;
 			font-weight: normal;
 			cursor: text;
 		}
@@ -259,6 +260,15 @@ button {
 		.form__close:not(:hover) {
 				transition: 0.5s;
 			}
+.form__status {
+	color: green;
+    display: none;
+    text-align: center;
+    margin-top: -70px;
+}
+button.form__btn {
+    width: 100%;
+}
 .about__learn-more h2 {
 	margin-bottom: 30px;
 	font-size: 30px;
@@ -886,6 +896,7 @@ button {
 	
 	.call__form, .learn-more__form {
 		left: 30%;
+		min-height: 80%;
 	}
 	.learn-more__form input {
 		margin: 0;
@@ -1263,7 +1274,7 @@ button {
 		.about-info img {
 			width: 297px;
 		    margin-right: 20px;
-		    padding-top: 198px;
+		    padding-top: 202px;
 		}
 		.about-info h1 {
 			margin-left: auto;
@@ -1555,6 +1566,9 @@ button {
 			padding: 23px 0;
 			font-size: 16px;
 			margin-top: 23px;
+		}
+		button.form-btn {
+		    width: 100%;
 		}
 
 	.block-developer {
