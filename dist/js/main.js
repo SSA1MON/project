@@ -12,7 +12,15 @@ $(document).ready(function(){
 			$('body').css('overflow', 'hidden');
 		});
 			// Закрытие формы заказа с помощью кнопки 
+<<<<<<< HEAD
 			$('.form__close').click(function() {
+=======
+<<<<<<< HEAD:app/js/main.js
+			$('.form__close').click(function() {
+=======
+			$('.form__close :i').click(function() {
+>>>>>>> fc9a350c3324e1a116fdad3054e3293eb12f6b5c:dist/js/main.js
+>>>>>>> fc9a350c3324e1a116fdad3054e3293eb12f6b5c
 				$('.header__call').fadeOut(200);
 				$('body').css('overflow', 'visible');
 			});
@@ -38,7 +46,15 @@ $(document).ready(function(){
 			$('body').css('overflow', 'hidden');
 		});
 
+<<<<<<< HEAD
 		$('.menu__close').click(function() {
+=======
+<<<<<<< HEAD:app/js/main.js
+		$('.menu__close').click(function() {
+=======
+		$('.menu__close :i').click(function() {
+>>>>>>> fc9a350c3324e1a116fdad3054e3293eb12f6b5c:dist/js/main.js
+>>>>>>> fc9a350c3324e1a116fdad3054e3293eb12f6b5c
 			$('.drop-menu__mob-menu').hide();
 			$('.header__call').hide();
 			$('body').css('overflow', 'visible');
@@ -69,9 +85,21 @@ $(document).ready(function(){
 			$('.about__learn-more').fadeIn(200);
 			$('body').css('overflow', 'hidden');
 		});
+<<<<<<< HEAD
 		$('button.order').click(function() {
 			$('.about__learn-more').fadeIn(200);
 			$('body').css('overflow', 'hidden'); 
+=======
+<<<<<<< HEAD:app/js/main.js
+		$('button.order').click(function() {
+			$('.about__learn-more').fadeIn(200);
+			$('body').css('overflow', 'hidden'); 
+=======
+		$('.dev-examples :button').click(function() {
+			$('.about__learn-more').fadeIn(200);
+			$('body').css('overflow', 'hidden');
+>>>>>>> fc9a350c3324e1a116fdad3054e3293eb12f6b5c:dist/js/main.js
+>>>>>>> fc9a350c3324e1a116fdad3054e3293eb12f6b5c
 		});
 			// Закрытие формы
 			$('.form__close').click(function() {
@@ -184,6 +212,10 @@ $(document).ready(function(){
     	$('.up-page').on('click', function(e) {
     		$('html,body').stop().animate({ scrollTop: $('html,body').offset().top }, 700);
     		e.preventDefault();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:app/js/main.js
+>>>>>>> fc9a350c3324e1a116fdad3054e3293eb12f6b5c
 		});
 		
 		if($(window).width() < 1024) {
@@ -203,6 +235,12 @@ $(document).ready(function(){
 				$('body').css('overflow', 'visible');
 			});
 		}
+<<<<<<< HEAD
+=======
+=======
+    	});
+>>>>>>> fc9a350c3324e1a116fdad3054e3293eb12f6b5c:dist/js/main.js
+>>>>>>> fc9a350c3324e1a116fdad3054e3293eb12f6b5c
     };
 
 
