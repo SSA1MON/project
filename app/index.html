@@ -15,7 +15,7 @@
 <body>
 	
 	<header>
-		<div class="container-fluid bg-gray">
+		<div class="bg-gray">
 			<div class="container">
 				<div class="header">
 					<nav>
@@ -35,9 +35,9 @@
 								<div class="menu__close"><i class="fas fa-times"></i></div>
 								<h2>Меню</h2>
 								<ul>
-									<li><a href="#">Услуги</a></li>
-									<li><a href="#">Портфолио</a></li>
-									<li><a href="#">Стоимость</a></li>
+									<li class="services"><a href="#">Услуги</a></li>
+									<li class="activity"><a href="#">Портфолио</a></li>
+									<li class="price"><a href="#">Стоимость</a></li>
 								</ul>
 							</div>
 						</div>
@@ -70,9 +70,9 @@
 		</div>
 	</header>
 	<main>
-		<article>
+		<section>
 			<div class="up-page"><i class="fas fa-chevron-up"></i></div>
-			<div class="container-fluid bg-gray bg-svg">
+			<div class="bg-gray bg-svg">
 				<div class="about-symbols">
 					<div class="about-symbols__div"> &lt;div&gt;</div>
 					<div class="about-symbols__div-two"> &lt;div&gt; </div>
@@ -106,9 +106,8 @@
 					</div>
 				</div>
 			</div>
-		</article>
-		<article>
-			<div class="container-fluid">
+		</section>
+		<section>
 				<div class="container">
 					<div class="block-developer">
 						<h2>Что я делаю</h2>
@@ -133,16 +132,15 @@
 						<button>Узнать стоимость</button>
 					</div>
 				</div>
-			</div>
-		</article>
-		<article>
-			<div class="container-fluid bg-gray">
+		</section>
+		<section>
+			<div class="bg-gray">
 				<div class="container">
 					<div class="dev-examples">
 						<h2>Примеры моих работ</h2>
 						<div class="carousel">
-								<img class="left-arrow js-prev" src="img/arrow.png" alt="Arrow">
-								<img class="right-arrow js-next" src="img/arrow.png" alt="Arrow">
+								<button class="left-arrow js-prev" alt="Arrow"><img src="img/arrow.png" alt=""></button>
+								<button class="right-arrow js-next" alt="Arrow"><img src="img/arrow.png" alt=""></button>
 							<div class="owl-carousel owl-theme">
 							    <div class="item item1">
 							    	<img src="img/work1.jpg" alt="Psychology">
@@ -159,13 +157,13 @@
 							</div>
 						</div>
 
-						<button>Заказать проект</button>
+						<button class="order">Заказать проект</button>
 					</div>
 				</div>
 			</div>
-		</article>
-		<article>
-			<div class="container-fluid adaptive">
+		</section>
+		<section>
+			<div class="adaptive">
 				<div class="adaptive-symbols">
 					<div class="adaptive-symbols__bracket"> {&nbsp;} </div>
 					<div class="adaptive-symbols__slash"> &lt;/&gt; </div>
@@ -180,10 +178,9 @@
 					</div>
 				</div>
 			</div>
-		</article>
+		</section>
 	</main>
 	<footer>
-		<div class="container-fluid">
 			<div class="container">
 				<div class="footer">
 					<div class="footer-links">
@@ -204,16 +201,15 @@
 					<div class="footer-connect">
 						<input type="submit" value="Заказать звонок">
 						<div class="footer-connect__social-icons">
-							<div class="social-icons__vk" aria-label="vk"><a href="https://vk.com" target="_blank"></a></div>
-							<div class="social-icons__fb" aria-label="facebook"><a href="https://fb.com" target="_blank"></a></div>
-							<div class="social-icons__twtr" aria-label="twitter"><a href="https://twitter.com" target="_blank"></a></div>
-							<div class="social-icons__inst" aria-label="instagram"><a href="https://instagram.com" target="_blank"></a></div>
+							<div class="social-icons__vk"><a href="https://vk.com" target="_blank" aria-label="vk"></a></div>
+							<div class="social-icons__fb"><a href="https://fb.com" target="_blank" aria-label="facebook"></a></div>
+							<div class="social-icons__twtr"><a href="https://twitter.com" target="_blank" aria-label="twitter"></a></div>
+							<div class="social-icons__inst"><a href="https://instagram.com" target="_blank" aria-label="instagram"></a></div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="copyright">&copy; Дмитрий Алексеев, 2016 - 2018</div>
-		</div>
 	</footer>
 
 </body>
