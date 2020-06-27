@@ -11,6 +11,9 @@
 }
 
 @media screen and (max-width: 1505px) {
+	.bg-svg {
+		background-position: 130% 100%;
+	}
 	.container {
 		width: auto;
 	}
@@ -70,6 +73,11 @@
 
 	.left-arrow, .right-arrow, .carousel__work-three {
 		display: none;
+	}
+}
+@media screen and (max-width: 1260px) {
+	.about-info p {
+		max-width: 300px;
 	}
 }
 @media screen and (max-width: 1175px) {
@@ -289,7 +297,15 @@
 		display: none;
 	}
 }
+@media screen and (max-width: 905px) {
+	.bg-svg {
+		background-position: 400% 261%;
+	}
+}
 @media screen and (max-width: 860px) {
+	.bg-svg {
+		background-position: 700% 261%;
+	}
 	.about-info button {
 		padding: 24px 67px;
 	}
@@ -301,9 +317,14 @@
 		left: 440px;
 	}
 }
+@media screen and (max-width: 840px) {
+	.bg-svg {
+		background-position: 300px 261%;
+	}
+}
 @media screen and (max-width: 800px) {
 	.bg-svg {
-		background-position: 100% 411%;
+		background-position: 100px 400%;
 	}
 
 	.about-info button {
@@ -347,6 +368,9 @@
 		margin-left: 15%;
 	}
 
+	.bg-svg {
+		background-position: 100% 411%;
+	}
 	.call__form {
 		min-width: 100%;
 		min-height: 100%;
