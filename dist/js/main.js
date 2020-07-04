@@ -47,16 +47,26 @@ $(document).ready(function(){
 
 	function animationSymbols()	{
 
-		 if( window.innerWidth >= 1850 ){
-		    $(".about-symbols__div").css('margin-top', '87px');
+		if ( window.innerWidth >= 1850 ){
+			$(".about-symbols__div").css('margin-top', '87px');
 	        $(".about-symbols__div-two").css('margin-left', '740px');
 	        $(".about-symbols__bracket").css('margin-left', '95px');
 	        $(".about-symbols__sharp").css('margin-left', '243px');
 	        $(".about-symbols__slash").css('margin-left', '371px');
-		 } else {
+		}
+		 else if ( window.innerWidth <= 1024 ){
+		    $(".about-symbols__div").css('margin-top', '76px');
+	        $(".about-symbols__bracket").css('margin-left', '35px');
+	        $(".about-symbols__sharp").css('margin-left', '60px');
+	        $(".about-symbols__slash").css('margin-left', '355px');
+		 }
+		 else if ( window.innerWidth <= 320 ){
+			$(".about-symbols__div").css('margin-top', '75px');
+		 }
+		 else {
 		      return;
 		 }
-    };
+	};
 
     function learnmoreButtons() {
 
@@ -207,7 +217,7 @@ $(document).ready(function(){
 
 
     orderсallButtons();
-    dropdownMenu();
+	dropdownMenu();
 	setTimeout(animationSymbols, 1000);
 	learnmoreButtons();
 	carouselSlider();

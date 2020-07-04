@@ -57,11 +57,10 @@ button {
 	background-repeat: no-repeat;
 	background-position: 100% 100%;
 }
-.header {
+.header, .footer-connect {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	background-color: #fbfbfb;
 	padding-top: 29px;
 	ul {
 		display: -webkit-box;
@@ -168,8 +167,10 @@ button {
 	display: none;
 	cursor: pointer;
 }
-.call__form input[type="text"], .call__form input[type="tel"] {
+.call__form input[type="text"], .call__form input[type="tel"],
+.learn-more__form input[type="text"], .learn-more__form input[type="email"] {
 	color: #000;
+	margin: 10px 0 10px 0;
 }
 .header__call, .about__learn-more {
 	background-color: rgba(0, 0, 0, 0.65);
@@ -209,9 +210,8 @@ button {
 		text-align: center;
 	}
 }
-.call__form p, .about__learn-more p {
-	margin: 10px 0 10px 0 !important;
-	font-size: 14px !important;
+.call__form label, .about__learn-more label {
+	font-size: 14px;
 	color: #8993ad;
 	width: 100%;
 }
@@ -607,24 +607,8 @@ form {
 }
 .footer-connect {
 	margin-right: 25px;
-	input {
-		padding: 12px 60px;
-		color: #f53f4f;
-		border: 1px solid #fc557c;
-		background-color: #fff;
-		cursor: pointer;
-		font-size: 16px;
-		font-family: Roboto, sans-serif;
-		outline: none;
-		&:hover {
-			background-color: #fc557c;
-			color: #fff;
-			transition: 0.7s;
-		}
-		&:not(:hover) {
-			transition: 0.7s;
-		}
-	}
+	display: block;
+	padding: 0;
 }
 .footer-connect__social-icons {
 	margin-top: 25px;

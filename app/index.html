@@ -9,7 +9,7 @@
 	<link rel="icon" href="img/favicon.ico">
 	<link rel="apple-touch-icon" href="/apple-icon.jpg">
 	<link rel="stylesheet" href="css/style.min.css">
-	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/jquery-3.5.0.min.js" defer></script>
 	<script src="js/script.min.js" defer></script>
 </head>
 <body>
@@ -56,9 +56,9 @@
 							<div class="form__close"><i class="fas fa-times"></i></div>
 							<div class="container-menu">
 								<h2>Заказать звонок</h2>
-								<p>* Введите Ваше имя:</p>
+								<label>* Введите Ваше имя:</label>
 								<input type="text" name="Имя" placeholder="Иван" required maxlength="10">
-								<p>* Введите Ваш номер телефона:</p>
+								<label>* Введите Ваш номер телефона:</label>
 								<input type="tel" name="Телефон" placeholder="+7 (___) ___-__-__" required>
 								<button class="form__btn" type="submit">Отправить</button>
 								<div class="form__status">Отправлено!</div>
@@ -94,9 +94,9 @@
 									<div class="form__close"><i class="fas fa-times"></i></div>
 									<div class="container-menu">
 										<h2>Узнать больше</h2>
-										<p>* Введите Ваше имя:</p>
+										<label>* Введите Ваше имя:</label>
 										<input type="text" name="Имя" placeholder="Иван" required>
-										<p>* Введите Ваш e-mail:</p>
+										<label>* Введите Ваш e-mail:</label>
 										<input type="email" name="Почта" placeholder="dmitry@alekseev.com" required>
 										<button class="form-btn form__btn" type="submit">Отправить</button>
 										<div class="form__status">Отправлено!</div>

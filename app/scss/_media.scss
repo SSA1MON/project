@@ -149,12 +149,10 @@
     	margin-left: 886px;
 	}
 	.about-symbols__div-two {
-		margin-left: 20%;
-    	margin-top: 134px;
-    	width: 60%;
+		display: none;
 	}
 	.about-symbols__bracket {
-		margin-top: -27px;
+		margin-top: 150px;
     	margin-left: 4%;
 	}
 	.about-symbols__sharp {
@@ -163,7 +161,7 @@
 	}
 	.about-symbols__slash {
 		margin-left: 37%;
-    	margin-top: -127px;
+    	margin-top: -115px;
 	}
 	
 
@@ -230,7 +228,7 @@
 	
 	.learn-more__form input {
 		margin: 0;
-		padding: 20px 10px;
+		padding: 15px 10px;
 	}
 	.left-arrow, .right-arrow {
 		display: none;
@@ -266,7 +264,7 @@
 		}
 		.adaptive-symbols__div {
 			left: 512px;
-    		top: 219px;
+    		top: 240px;
     		font-size: 25px;
 		}
 		.adaptive-symbols__bracket-two, .adaptive-symbols__sharp {
@@ -441,12 +439,6 @@
 		background-color: #ff4e2e;
 		border: none;
 		color: #fff;
-		font-size: 18px;
-		padding: 23px 72px;
-		outline: none;
-		cursor: pointer;
-		font-family: Roboto, sans-serif;
-		font-size: 18px;
 	}
 }
 
@@ -699,19 +691,6 @@
 		.carousel button {
 			min-width: auto;
 		}
-	/*.item {
-		padding-left: 25px !important;
-		padding-right: 23px !important;
-	}
-		.item h3 {
-			margin-top: 24px;
-		    font-size: 23.6px;
-		    text-align: left;
-		}
-	.item1 img, .item2 img {
-	    width: 100% !important;
-	    height: 300px;
-	}*/
 	.owl-dots button {
 			margin-top: 47px;
 		}
@@ -734,14 +713,6 @@
 		    line-height: 2;
 		    font-size: 19.5px;
 		    padding: 0 0 0 4px;
-		}
-	
-	.container1 {
-		margin-left: 20px;
-		font-size: 28px;
-	}
-		.container1 p {
-			font-size: 15px;
 		}
 
 	.footer {
@@ -770,17 +741,8 @@
 		}
 
 	.footer-connect input {
-		background-color: #ff4e2e;
-		border: none;
-		color: #fff;
-		font-size: 18px;
-		padding: 23px 72px;
-		outline: none;
-		cursor: pointer;
-		font-family: Roboto, sans-serif;
-		font-size: 21px;
+		width: 80%;
 	    margin-top: 30px;
-	    padding: 23px 99px;
 	}
 	.footer-connect__social-icons {
 		margin-top: 65px;
@@ -827,8 +789,7 @@
 		font-size: 18px;
 	}
 	.footer-connect input {
-		width: 280px;
-    	padding: 25px 0 25px 0;
+    	padding: 15px 0 25px 0;
 	}
 	.block-developer button {
 	    padding: 31px 65px 42px;
@@ -873,12 +834,14 @@
 	}
 	.about-symbols__div-two {
 		font-size: 16px;
-	    margin-left: 125%;
-	    margin-top: 341px;
+	    margin-left: 15%;
+		margin-top: 341px;
+		width: 40px;
+		display: none;
 	}
 	.about-symbols__bracket {
 	    font-size: 25px;
-	    margin-top: -67px;
+	    margin-top: 300px;
 	    margin-left: 134%;
 	}
 	.about-symbols__sharp {
@@ -888,8 +851,9 @@
 	}
 	.about-symbols__slash {
 	    font-size: 20px;
-	    margin-left: 461%;
-	    margin-top: -149px;
+	    margin-left: 100% !important;
+		margin-top: -149px;
+		display: none;
 	}
 
 	.about-info {
@@ -1013,9 +977,7 @@
 		    font-size: 14px;
 		}
 	.footer-connect input {
-	    padding: 17px 0 19px 0;
 	    margin-top: 6px;
-	    font-size: 16px;
 	}
 	.footer-connect__social-icons {
 	    margin-top: 47px;
