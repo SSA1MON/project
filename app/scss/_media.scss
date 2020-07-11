@@ -2,9 +2,6 @@
 	.about-symbols {
 		display: none;
 	}
-	.left-arrow, .right-arrow, .carousel__work-three {
-		display: none;
-	}
 	.adaptive-symbols {
 		display: none;
 	}
@@ -39,6 +36,13 @@
 		margin-left: 40px;
 		margin-right: 40px;
 	}
+	.left-arrow {
+		margin-top: 130px !important;
+		margin-left: -30px;
+	}
+	.right-arrow {
+		margin-left: 92%;
+	}
 	.container-workspace {
 		margin-left: 10%;
 	}
@@ -47,6 +51,9 @@
 	}
 	.footer {
 		margin: 0 100px;
+	}
+	.up-page {
+		display: none;
 	}
 }
 @media screen and (max-width: 1350px) {
@@ -70,14 +77,16 @@
 		margin-bottom: 77px;
 		width: 260px;
 	}
-
-	.left-arrow, .right-arrow, .carousel__work-three {
-		display: none;
+	.right-arrow {
+		margin-right: 91%;
 	}
 }
 @media screen and (max-width: 1260px) {
 	.about-info p {
 		max-width: 300px;
+	}
+	.left-arrow, .right-arrow {
+		display: none;
 	}
 }
 @media screen and (max-width: 1175px) {
