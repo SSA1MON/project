@@ -147,14 +147,14 @@ $(document).ready(function(){
 	    		},
 	    		focusInvalid: false,
 	    		rules: {
-	    			Телефон: {
+	    			Phone: {
 	    				required: true,
 	    			},
-	    			Имя: {
+	    			Name: {
 	    				required: true,
 	    				maxlength: 10,
 	    			},
-	    			Почта: {
+	    			Mail: {
 	    				required: true,
 	    			}
 	    		},
